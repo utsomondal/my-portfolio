@@ -16,7 +16,7 @@
 <body class="max-w-7xl mx-auto">
     <header>
         <!-- navbar -->
-        <div class="navbar bg-base-100">
+        <nav class="navbar bg-base-100">
             <div class="navbar-start">
                 <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -42,9 +42,9 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
-        </div>
+        </nav>
         <!-- banner -->
-        <div class="md:mt-10 md:p-2">
+        <div class="md:mt-10 p-2">
             <div class="flex md:flex-row flex-col-reverse justify-between items-center gap-5">
                 <div>
                     <p class="md:text-6xl text-4xl font-bold">Hi, I am a Data Analyst</p>
@@ -68,8 +68,62 @@
     </header>
     <main>
         <!-- about me -->
-        <section>
-            
+        <section class="md:mt-20 mt-10 p-2">
+            <p class="text-xl">
+                I'm Utso Mondal, currently pursuing Computer Science and Engineering at the World University of Bangladesh. Proficient
+                in C and JavaScript, I'm immersing myself in the realm of data analysis, mastering Python and a suite of analytical
+                tools. I thrive on unraveling data complexities to unearth actionable insights, driven by a fervent desire to innovate
+                and solve real-world challenges. Let's forge connections and embark on a transformative journey through the intricate
+                world of data analytics together!
+            </p>
+        </section>
+        <!-- skill sets -->
+        <section class="md:mt-20 my-10 p-2">
+            <h3 class="text-4xl font-bold mb-5">Skill Set</h3>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5">
+                <!-- card 1 -->
+                <div class="card  border shadow-xl">
+                    <figure><img src="./assets/STAT1.jpg" class="md:w-[410px] h-[230px]"/></figure>
+                    <div class="card-body flex justify-center">
+                        <h2 class="card-title">Statistical Analysis</h2>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="card border shadow-xl">
+                    <figure><img src="./assets/python.png" class="md:w-[410px] h-[230px]"/></figure>
+                    <div class="card-body flex justify-center items-center">
+                        <h2 class="card-title">Python Programming Language</h2>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="card border shadow-xl">
+                    <figure><img src="./assets/database.jpg" class="md:w-[410px] h-[230px]"/></figure>
+                    <div class="card-body flex justify-center items-center">
+                        <h2 class="card-title">Database Management</h2>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="card border shadow-xl">
+                    <figure><img src="./assets/data-cleaning.jpg" class="md:w-[410px] h-[230px]"/></figure>
+                    <div class="card-body flex justify-center items-center">
+                        <h2 class="card-title">Data Cleaning</h2>
+                    </div>
+                </div>
+                <!-- card 5 -->
+                <div class="card border shadow-xl">
+                    <figure><img src="./assets/data-pro.png" class="md:w-[410px] h-[230px]"/></figure>
+                    <div class="card-body flex justify-center items-center">
+                        <h2 class="card-title">Data Processing</h2>
+                    </div>
+                </div>
+                <!-- card 6 -->
+                <div class="card border shadow-xl">
+                    <figure><img src="./assets/data-visu.png" class="md:w-[410px] h-[230px]"/></figure>
+                    <div class="card-body flex justify-center items-center">
+                        <h2 class="card-title">Data Visualization</h2>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer></footer>
