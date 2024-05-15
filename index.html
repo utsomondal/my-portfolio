@@ -17,10 +17,25 @@
     <header>
         <!-- navbar -->
         <div class="navbar bg-base-100">
-            <div class="flex-1">
-                <a href="index.html" class="font-black text-3xl">UM Insights_</a>
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <a href="index.html" class="font-black md:text-3xl text-2xl">UM Insights_</a>
             </div>
-            <div class="flex-none">
+            <div class="navbar-end hidden lg:flex">
                 <ul class="menu menu-horizontal px-1 text-lg">
                     <li><a href="about.html">About</a></li>
                     <li><a href="projects.html">Projects</a></li>
@@ -28,8 +43,35 @@
                 </ul>
             </div>
         </div>
+        <!-- banner -->
+        <div class="md:mt-10 md:p-2">
+            <div class="flex md:flex-row flex-col-reverse justify-between items-center gap-5">
+                <div>
+                    <p class="md:text-6xl text-4xl font-bold">Hi, I am a Data Analyst</p>
+                    <!-- <p class="md:text-6xl text-4xl font-bold">Data Analyst</p> -->
+                    <div class="mt-8">
+                        <ul class="flex text-lg gap-5 md:justify-start justify-center">
+                            <li><a target="_blank" href="https://www.linkedin.com/in/utsomondal/" class=""><img
+                                        src="./assets/linkedin.png" class="w-[35px]"></a></li>
+                            <li><a target="_blank" href="https://github.com/utsomondal" class=""><img
+                                        src="./assets/github.png" class="w-[35px]"></a></li>
+                            <li><a target="_blank" href="https://www.kaggle.com/utsomondal" class=""><img
+                                        src="./assets/kaggle.png" class="w-[35px]"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <img src="./assets/myself.png" class="rounded-b-full" />
+                </div>
+            </div>
+        </div>
     </header>
-    <main></main>
+    <main>
+        <!-- about me -->
+        <section>
+            
+        </section>
+    </main>
     <footer></footer>
 </body>
 
