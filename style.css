@@ -1,5 +1,114 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-body{
+body {
     font-family: "Lato", sans-serif;
+}
+
+.social-icon {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+.skill-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.skill-card-2 {
+    transition: transform 0.3s ease, 0.3s ease;
+}
+
+.skill-card-2:hover {
+    transform: scale(1.05);
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #2563EB;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+
+
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.slide-up {
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideUp 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.skill-card,
+.skill-card-2,
+.progress-bar {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInSlideUp 1.5s forwards;
+}
+
+@keyframes fadeInSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar-start,
+.navbar-end ul li,
+.banner,
+.card {
+    animation-delay: 0.5s;
+}
+
+.skill-card,
+.progress-bar {
+    animation-delay: 1s;
+}
+
+.progress-bar {
+    animation-delay: 1.5s;
 }
